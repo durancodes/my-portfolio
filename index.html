@@ -1,155 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duranjai V. | AI Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #050505;
+            --card-bg: #111111;
+            --text: #ffffff;
+            --text-dim: #a1a1aa;
+            --primary: #3b82f6;
+            --border: #27272a;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 1.5rem; }
+
+        /* Navigation */
+        nav {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            background: rgba(5, 5, 5, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+        }
+
+        .nav-content { display: flex; justify-content: space-between; align-items: center; }
+
+        /* Hero Section */
+        .hero { padding: 8rem 0 4rem; text-align: center; }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--primary);
+            border-radius: 99px;
+            font-size: 0.875rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 { font-size: 3.5rem; letter-spacing: -0.02em; margin-bottom: 1rem; }
+
+        .hero p { font-size: 1.25rem; color: var(--text-dim); max-width: 700px; margin: 0 auto 2rem; }
+
+        /* Projects & Experience */
+        section { padding: 4rem 0; }
+
+        h2 { font-size: 1.875rem; margin-bottom: 2rem; border-left: 4px solid var(--primary); padding-left: 1rem; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .card:hover { transform: translateY(-5px); border-color: var(--primary); }
+
+        .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+
+        .tag { font-size: 0.75rem; background: #1e1e1e; padding: 0.2rem 0.6rem; border-radius: 4px; color: var(--text-dim); }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
 <body>
 
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="nav-logo">Duranjai V.</a>
-            <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <nav>
+        <div class="container nav-content">
+            <div style="font-weight: 700; font-size: 1.25rem;">DURANJAI.AI</div>
+            <div style="font-size: 0.9rem; color: var(--text-dim);">AI Engineer</div>
         </div>
     </nav>
 
     <header class="hero">
-        <div class="container hero-content">
-            <h1 class="hero-headline">Duranjai Venkatachalapathi</h1>
-            <h2 class="hero-subheadline">AI Engineer</h2>
-            <p class="hero-kicker">Bridging ML Research with Scalable Product Development</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="javascript:void(0);" id="open-resume-btn" class="btn btn-secondary">View Resume</a>
-            </div>
+        <div class="container">
+            <span class="badge">Portfolio 2026</span>
+            <h1>Duranjai Venkatachalapathi</h1>
+            <p>Expert in architecting end-to-end intelligent systems, specializing in Large Language Model (LLM) integration and RAG pipelines.</p>
+            <a href="mailto:jaij6309@gmail.com" class="btn">Connect via Email</a>
         </div>
     </header>
 
-    <main>
-        <section id="about" class="about-section animate-on-scroll">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>
-                    Results-driven AI Engineer focused on building robust, evaluable AI solutions. Expert in architecting end-to-end systems with a focus on Large Language Model (LLM) integration and RAG pipelines. Committed to accuracy, performance, and seamless user experiences.
-                </p>
-            </div>
-        </section>
-
-        <section id="experience" class="experience-section animate-on-scroll">
-            <div class="container">
-                <h2>Experience</h2>
-                <div class="experience-item">
-                    <h3>Machine Learning Intern</h3>
-                    <h4>OEG DEFENCE & AEROSPACE Pvt. Ltd.</h4>
-                    <span class="experience-date">June 2025</span>
-                    <ul>
-                        <li>Developed drone-based object detection systems using YOLOv8 and real-time inference.</li>
-                        <li>Managed dataset preparation and augmentation through RoboFlow.</li>
-                        <li>Collaborated on Python-based deployment workflows and OpenCV integration.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="skills-section animate-on-scroll">
-            <div class="container">
-                <h2>Technical Expertise</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>AI & Machine Learning</h3>
-                        <div class="skills-tags">
-                            <span>LLMs</span>
-                            <span>RAG Pipelines</span>
-                            <span>Hybrid Search (Vector + BM25)</span>
-                            <span>RAGAS Evaluation</span>
-                            <span>Computer Vision</span>
-                            <span>Prompt Engineering</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Backend & Tools</h3>
-                        <div class="skills-tags">
-                            <span>Python</span>
-                            <span>SQL</span>
-                            <span>Vector DBs (pgvector, Redis)</span>
-                            <span>Docker</span>
-                            <span>Streamlit</span>
-                            <span>Git/GitHub</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="container">
         
-        <section id="projects" class="projects-section animate-on-scroll">
-            <div class="container">
-                <h2>Featured Projects</h2>
-                <div class="projects-grid">
-                    
-                    <div class="project-card">
-                        <div class="project-card-content">
-                            <h3>CoursePack-QA</h3>
-                            <p>End-to-end RAG system providing grounded, citable answers from course documents using hybrid search and reranking.</p>
-                            <div class="project-tags">
-                                <span>LLMs</span>
-                                <span>RAG</span>
-                                <span>Hybrid Search</span>
-                            </div>
-                        </div>
+        <section id="work">
+            <h2>Featured Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>CoursePack-QA</h3>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">An end-to-end RAG system providing grounded, citable answers from documents using hybrid search and reranking.</p>
+                    <div class="tags">
+                        <span class="tag">LLMs</span>
+                        <span class="tag">RAG</span>
+                        <span class="tag">pgvector</span>
                     </div>
+                </div>
 
-                    <div class="project-card">
-                        <div class="project-card-content">
-                            <h3>Autonomous Drone Tracking</h3>
-                            <p>Real-time person tracking using YOLO and PID control with live GPS update rate management.</p>
-                            <div class="project-tags">
-                                <span>YOLOv8</span>
-                                <span>OpenCV</span>
-                                <span>Python</span>
-                            </div>
-                            <a href="https://github.com/durancodes/Projects/blob/main/drone.py" class="project-link" target="_blank">GitHub</a>
-                        </div>
+                <div class="card">
+                    <h3>Drone Person Tracking</h3>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">Autonomous tracking using YOLO and PID control with live GPS update rate management.</p>
+                    <div class="tags">
+                        <span class="tag">YOLOv8</span>
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">Python</span>
                     </div>
-
-                    <div class="project-card">
-                        <div class="project-card-content">
-                            <h3>Grocery to Recipe</h3>
-                            <p>Web-based application utilizing computer vision to identify items and generate custom recipes.</p>
-                            <div class="project-tags">
-                                <span>Computer Vision</span>
-                                <span>RoboFlow</span>
-                                <span>Streamlit</span>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section animate-on-scroll">
-            <div class="container">
-                <h2>Get In Touch</h2>
-                <p>Seeking opportunities to develop intelligent systems in dynamic environments.</p>
-                <a href="mailto:jaij6309@gmail.com" class="btn btn-primary">Email Me</a>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/duranjai-v-a9b05021a/" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/durancodes" target="_blank">GitHub</a>
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="card" style="border-left: 4px solid var(--primary);">
+                <h3>Machine Learning Intern</h3>
+                <p><strong>OEG Defence & Aerospace Pvt. Ltd.</strong> | June 2025</p>
+                <p style="color: var(--text-dim); margin-top: 1rem; font-size: 0.95rem;">Developed drone-based object detection systems using YOLOv8 and managed datasets through RoboFlow.</p>
+            </div>
+        </section>
+
+        <section id="certs">
+            <h2>Certifications</h2>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                <div class="card" style="padding: 1.5rem; text-align: center;">
+                    <p>Oracle Certified Generative AI Professional (2025)</p>
+                </div>
+                <div class="card" style="padding: 1.5rem; text-align: center;">
+                    <p>Oracle Certified AI Foundations Associate (2025)</p>
                 </div>
             </div>
         </section>
-    </main>
 
-    <div id="resume-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <img src="resume.jpg" alt="Duranjai's Resume" id="resume-image">
-        </div>
     </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Duranjai Venkatachalapathi. | B.E CSE-AIML [cite: 8]</p>
+    <footer style="text-align: center; padding: 6rem 0; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.875rem;">
+        <p>&copy; 2026 Duranjai Venkatachalapathi. Chennai, India.</p>
+        <div style="margin-top: 1rem;">
+            <a href="https://github.com/durancodes" style="color: var(--primary); text-decoration: none;">GitHub</a> • 
+            <a href="https://www.linkedin.com/in/duranjai-v-a9b05021a/" style="color: var(--primary); text-decoration: none;">LinkedIn</a>
         </div>
     </footer>
+
 </body>
+</html>
