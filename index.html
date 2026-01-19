@@ -28,6 +28,7 @@
 
         .container { max-width: 1000px; margin: 0 auto; padding: 0 1.5rem; }
 
+        /* Navbar */
         nav {
             padding: 1.5rem 0;
             border-bottom: 1px solid var(--border);
@@ -38,6 +39,9 @@
             z-index: 100;
         }
 
+        .nav-content { display: flex; justify-content: space-between; align-items: center; }
+
+        /* Hero */
         .hero { padding: 8rem 0 4rem; text-align: center; }
 
         .badge {
@@ -54,6 +58,7 @@
 
         .hero p { font-size: 1.25rem; color: var(--text-dim); max-width: 700px; margin: 0 auto 2rem; }
 
+        /* Layout */
         section { padding: 4rem 0; }
 
         h2 { font-size: 1.875rem; margin-bottom: 2rem; border-left: 4px solid var(--primary); padding-left: 1rem; }
@@ -88,8 +93,8 @@
 <body>
 
     <nav>
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-            <div style="font-weight: 700; font-size: 1.25rem;">DURANJAI.AI</div>
+        <div class="container nav-content">
+            <div style="font-weight: 700; font-size: 1.25rem;">DURANJAI V.</div>
             <div style="font-size: 0.9rem; color: var(--text-dim);">AI Engineer</div>
         </div>
     </nav>
@@ -110,35 +115,37 @@
             <div class="grid">
                 <div class="card">
                     <h3>CoursePack-QA</h3>
-                    <p style="color: var(--text-dim); font-size: 0.95rem;">An end-to-end RAG system providing grounded, citable answers from documents using hybrid search and reranking.</p>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">An end-to-end RAG system designed to provide grounded, citable answers from documents using hybrid search (Vector + BM25) and reranking pipelines.</p>
                     <div class="tags">
                         <span class="tag">LLMs</span>
                         <span class="tag">RAG</span>
                         <span class="tag">pgvector</span>
+                        <span class="tag">Hybrid Search</span>
                     </div>
                 </div>
 
                 <div class="card">
-                    <h3>Drone Person Tracking</h3>
-                    <p style="color: var(--text-dim); font-size: 0.95rem;">Autonomous tracking using YOLO and PID control with live GPS update rate management.</p>
+                    <h3>Autonomous Drone Tracking</h3>
+                    <p style="color: var(--text-dim); font-size: 0.95rem;">Real-time person tracking and object detection using YOLOv8 and PID controls with live GPS rate management.</p>
                     <div class="tags">
                         <span class="tag">YOLOv8</span>
                         <span class="tag">OpenCV</span>
                         <span class="tag">Python</span>
+                        <span class="tag">PID Control</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="experience">
-            <h2>Experience</h2>
+            <h2>Professional Experience</h2>
             <div class="card" style="border-left: 4px solid var(--primary);">
                 <h3>Machine Learning Intern</h3>
                 <p><strong>OEG Defence & Aerospace Pvt. Ltd.</strong> | June 2025</p>
                 <ul style="color: var(--text-dim); margin-top: 1rem; font-size: 0.95rem; list-style-position: inside;">
-                    <li>Developed drone-based object detection systems using YOLOv8 and real-time inference. [cite: 1, 3]</li>
-                    <li>Managed dataset preparation and augmentation through RoboFlow. [cite: 1, 3]</li>
-                    <li>Collaborated on Python-based deployment workflows and OpenCV integration. [cite: 1, 3]</li>
+                    <li>Contributed to intelligent drone systems by integrating ML and computer vision techniques.</li>
+                    <li>Developed drone-based object detection systems using YOLOv8 and real-time inference.</li>
+                    <li>Managed dataset preparation and augmentation using RoboFlow and OpenCV.</li>
                 </ul>
             </div>
         </section>
