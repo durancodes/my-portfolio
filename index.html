@@ -21,60 +21,25 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg);
     color: var(--text);
-    line-height: 1.6;
 }
 
-.container { max-width: 1000px; margin: 0 auto; padding: 0 1.5rem; }
-
-nav {
-    padding: 1.5rem 0;
-    border-bottom: 1px solid var(--border);
-    position: sticky;
-    top: 0;
-    background: rgba(5, 5, 5, 0.95);
-    backdrop-filter: blur(8px);
-    z-index: 100;
-}
-
-.nav-content { display: flex; justify-content: space-between; align-items: center; }
-
-.hero { padding: 8rem 0 4rem; text-align: center; }
-
-.badge {
-    display: inline-block;
-    padding: 0.3rem 0.8rem;
-    background: rgba(59, 130, 246, 0.15);
-    color: var(--primary);
-    border-radius: 99px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-}
-
-h1 { font-size: 3.5rem; letter-spacing: -0.03em; margin-bottom: 1rem; line-height: 1.1; }
-
-.hero p { font-size: 1.25rem; color: var(--text-dim); max-width: 750px; margin: 0 auto 2.5rem; }
+.container { max-width: 1000px; margin: auto; padding: 0 1.5rem; }
 
 section { padding: 4rem 0; }
 
-h2 { font-size: 1.8rem; margin-bottom: 2rem; border-left: 4px solid var(--primary); padding-left: 1rem; }
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--primary);
+    padding-left: 1rem;
+}
 
 .card {
     background: var(--card-bg);
     border: 1px solid var(--border);
     padding: 2rem;
     border-radius: 16px;
-    margin-bottom: 1.5rem;
-    transition: 0.3s ease;
 }
-
-.card:hover { border-color: var(--primary); transform: translateY(-3px); }
-
-.project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-
-.tag-list { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
-
-.tag { font-size: 0.75rem; background: #1a1a1a; color: var(--text-dim); padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid #333; }
 
 .btn {
     display: inline-block;
@@ -84,164 +49,42 @@ h2 { font-size: 1.8rem; margin-bottom: 2rem; border-left: 4px solid var(--primar
     border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
-    transition: 0.2s;
+    margin-top: 1rem;
 }
-
-.btn:hover { opacity: 0.9; transform: scale(1.02); }
 
 iframe {
     width: 100%;
     height: 600px;
     border: none;
-}
-
-@media (max-width: 768px) {
-    h1 { font-size: 2.5rem; }
-    .project-grid { grid-template-columns: 1fr; }
+    margin-top: 2rem;
 }
 </style>
 </head>
 
 <body>
 
-<nav>
-<div class="container nav-content">
-<div style="font-weight: 700;">DURANJAI V.</div>
-<div style="color: var(--text-dim);">AI Engineer</div>
-</div>
-</nav>
-
-<header class="hero">
 <div class="container">
-<span class="badge">LLMs • RAG • Computer Vision • AI Systems</span>
-<h1>Engineering Production-Ready AI Systems</h1>
-<p>
-Results-driven AI Engineer focused on bridging ML research with scalable product development.
-Specializing in Large Language Models (LLMs), Retrieval-Augmented Generation (RAG),
-and real-time computer vision systems.
-</p>
-<a href="mailto:jaij6309@gmail.com" class="btn">Connect With Me</a>
-</div>
-</header>
-
-<main class="container">
 
 <section>
-<h2>Education</h2>
-<div class="card">
-<h3>Easwari Engineering College</h3>
-<p style="color: var(--text-dim);">
-B.E Computer Science & Engineering (AI & ML) | CGPA: 8.71 <br>
-Sep 2023 – Apr 2027
-</p>
-</div>
-</section>
-
-<section>
-<h2>Experience</h2>
-<div class="card">
-<h3 style="color: var(--primary);">Machine Learning Intern</h3>
-<p style="font-weight:600;">OEG Defence & Aerospace Pvt. Ltd.</p>
-<p style="color: var(--text-dim);">June 2025 – Present</p>
-<ul style="margin-top:1rem; color:var(--text-dim); padding-left:1.2rem;">
-<li>Built Autonomous Drone Person Tracking using YOLO + PID control with GPS rate optimization</li>
-<li>Developed real-time object detection using YOLOv8 & OpenCV</li>
-<li>Worked on dataset curation & augmentation using RoboFlow</li>
-<li>Deployed Python-based real-time camera inference systems</li>
-</ul>
-</div>
-</section>
-
-<section>
-<h2>Core AI Projects</h2>
-<div class="project-grid">
-
-<div class="card">
-<h3>Weather Agent (ReAct LLM Agent)</h3>
-<p style="color: var(--text-dim);">
-Built a tool-using LLM agent with strict tool-calling rules using Llama-4 and Open-Meteo API for real-time weather forecasting.
-</p>
-<div class="tag-list">
-<span class="tag">LLMs</span>
-<span class="tag">ReAct</span>
-<span class="tag">Tool Calling</span>
-</div>
-</div>
-
-<div class="card">
-<h3>CoursePack-QA (RAG System)</h3>
-<p style="color: var(--text-dim);">
-End-to-end RAG system with hybrid retrieval (Vector + BM25) and reranking to generate grounded, citable academic answers.
-</p>
-<div class="tag-list">
-<span class="tag">RAG</span>
-<span class="tag">Hybrid Search</span>
-<span class="tag">pgvector</span>
-</div>
-</div>
-
-<div class="card">
-<h3>Barista Video Analysis</h3>
-<p style="color: var(--text-dim);">
-Offline vision-language pipeline analyzing POV barista videos using Moondream via Ollama with LlamaIndex workflows.
-</p>
-<div class="tag-list">
-<span class="tag">Vision-Language</span>
-<span class="tag">OpenCV</span>
-<span class="tag">Gradio</span>
-</div>
-</div>
-
-</div>
-</section>
-
-<section>
-<h2>Technical Skills</h2>
-<div class="card">
-<p><strong>AI/ML:</strong> RAG, Hybrid Search, Reranking, LLMs, Computer Vision, Prompt Engineering</p>
-<p><strong>Embeddings:</strong> BGE, MiniLM, Cross-Encoders</p>
-<p><strong>Languages:</strong> Python, SQL</p>
-<p><strong>Databases:</strong> pgvector, Redis, SQLite</p>
-<p><strong>Tools:</strong> Git, Docker, Streamlit</p>
-</div>
-</section>
-
-<section id="resume">
 <h2>Resume</h2>
+
 <div class="card" style="text-align:center;">
 
-<p style="color: var(--text-dim); margin-bottom:1.5rem;">
-Download or view my complete resume including projects, internships, and technical expertise.
+<p style="color: var(--text-dim);">
+You can download or view my complete resume below.
 </p>
 
-<a href="latest.pdf" download class="btn" style="margin-bottom:2rem;">
+<a href="latest.pdf" download class="btn">
 Download Resume (PDF)
 </a>
 
-<div style="margin-top:2rem; border-radius:12px; overflow:hidden; border:1px solid var(--border);">
 <iframe src="latest.pdf"></iframe>
-</div>
 
 </div>
+
 </section>
 
-<section>
-<h2>Certifications</h2>
-<div class="card">
-Oracle Cloud Infrastructure 2025 Certified Generative AI Professional <br><br>
-Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate
 </div>
-</section>
-
-</main>
-
-<footer style="padding:4rem 0; text-align:center; border-top:1px solid var(--border); color: var(--text-dim);">
-<p>© 2026 Duranjai Venkatachalapathi | Chennai, India</p>
-<p style="margin-top:0.5rem;">
-<a href="https://github.com/durancodes" style="color:var(--primary); text-decoration:none;">GitHub</a> •
-<a href="https://www.linkedin.com/in/duranjai-v-a9b05021a/" style="color:var(--primary); text-decoration:none;">LinkedIn</a>
-</p>
-</footer>
 
 </body>
 </html>
