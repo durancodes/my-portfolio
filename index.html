@@ -31,8 +31,9 @@ nav {
     border-bottom: 1px solid var(--border);
     position: sticky;
     top: 0;
-    background: rgba(5, 5, 5, 0.9);
+    background: rgba(5, 5, 5, 0.95);
     backdrop-filter: blur(8px);
+    z-index: 100;
 }
 
 .nav-content { display: flex; justify-content: space-between; align-items: center; }
@@ -87,6 +88,12 @@ h2 { font-size: 1.8rem; margin-bottom: 2rem; border-left: 4px solid var(--primar
 }
 
 .btn:hover { opacity: 0.9; transform: scale(1.02); }
+
+iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
 
 @media (max-width: 768px) {
     h1 { font-size: 2.5rem; }
@@ -199,10 +206,29 @@ Offline vision-language pipeline analyzing POV barista videos using Moondream vi
 </div>
 </section>
 
+<section id="resume">
+<h2>Resume</h2>
+<div class="card" style="text-align:center;">
+
+<p style="color: var(--text-dim); margin-bottom:1.5rem;">
+Download or view my complete resume including projects, internships, and technical expertise.
+</p>
+
+<a href="latest.pdf" download class="btn" style="margin-bottom:2rem;">
+Download Resume (PDF)
+</a>
+
+<div style="margin-top:2rem; border-radius:12px; overflow:hidden; border:1px solid var(--border);">
+<iframe src="latest.pdf"></iframe>
+</div>
+
+</div>
+</section>
+
 <section>
 <h2>Certifications</h2>
 <div class="card">
-Oracle Cloud Infrastructure 2025 Certified Generative AI Professional <br>
+Oracle Cloud Infrastructure 2025 Certified Generative AI Professional <br><br>
 Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate
 </div>
 </section>
@@ -212,8 +238,8 @@ Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate
 <footer style="padding:4rem 0; text-align:center; border-top:1px solid var(--border); color: var(--text-dim);">
 <p>© 2026 Duranjai Venkatachalapathi | Chennai, India</p>
 <p style="margin-top:0.5rem;">
-<a href="https://github.com/durancodes" style="color:var(--primary);">GitHub</a> •
-<a href="https://www.linkedin.com/in/duranjai-v-a9b05021a/" style="color:var(--primary);">LinkedIn</a>
+<a href="https://github.com/durancodes" style="color:var(--primary); text-decoration:none;">GitHub</a> •
+<a href="https://www.linkedin.com/in/duranjai-v-a9b05021a/" style="color:var(--primary); text-decoration:none;">LinkedIn</a>
 </p>
 </footer>
 
